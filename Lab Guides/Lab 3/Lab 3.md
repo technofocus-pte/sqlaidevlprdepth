@@ -1,4 +1,4 @@
-# **Lab 3: Building & Securing a Safe Clinical Report Search API** 
+# **Lab 3: Building and Securing a Safe Clinical Report Search API** 
 
 In this lab, participants step into a real-world healthcare scenario where a hospital needs a secure and intelligent way to search clinical discharge summaries using natural language. Using Microsoft SQL Server 2025, SQL Server Management Studio Copilot, Azure OpenAI Service, and Data API Builder, learners will build a secure semantic search API that enables staff to retrieve relevant clinical reports while ensuring patient data privacy through masking, RBAC, and managed identity. This hands-on experience demonstrates how modern AI capabilities can be integrated directly into SQL Server to create enterprise-ready, secure healthcare solutions.
 
@@ -639,4 +639,5 @@ speed up coding.
 ## Conclusion:
 
 By completing this lab, participants have successfully provisioned infrastructure, enabled SQL Server 2025 AI features, generated vector embeddings using Azure OpenAI, implemented semantic search with DiskANN indexing, and secured sensitive patient data using masking and role-based access control. They also exposed the search functionality as a secure REST API for hospital applications. Overall, learners gained practical experience in building an end-to-end AI-powered, privacy-compliant clinical search system that combines database intelligence, cloud AI services, and secure API development into one integrated solution.
+
 
