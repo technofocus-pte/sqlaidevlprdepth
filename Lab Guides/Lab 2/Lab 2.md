@@ -389,7 +389,7 @@ By completing this lab, you will be able to:
 
     - Subscription: **@lab.CloudSubscription.Name**
 
-    - Azure OpenAI Service: **azsqlaoai@lab.labinstance.id-lab2
+    - Azure OpenAI Service: **azsqlaoai@lab.labinstance.id-lab2**
 
     - Model deployment : text-embedding-3-small
 
@@ -610,6 +610,7 @@ chat to create a complete end-to-end solution. Most importantly, you
 ensured that every response is grounded in verified medical research,
 demonstrating how AI can be used responsibly and effectively in
 real-world healthcare and research environments.
+
 
 
 
