@@ -96,9 +96,9 @@ By the end of this lab, participants will be able to:
 
 6.  On Management page, enable the following information.
 
-		- Enable system assigned maanaged identity
-    
-    	- Enable peridodic assessment
+	- Enable system assigned maanaged identity
+
+	- Enable peridodic assessment
 
 
 8.  Click on **SQL Server management** tab
@@ -679,6 +679,7 @@ By the end of this lab, participants will be able to:
 ## Conclusion:
 
 By completing this lab, participants have successfully provisioned infrastructure, enabled SQL Server 2025 AI features, generated vector embeddings using Azure OpenAI, implemented semantic search with DiskANN indexing, and secured sensitive patient data using masking and role-based access control. They also exposed the search functionality as a secure REST API for hospital applications. Overall, learners gained practical experience in building an end-to-end AI-powered, privacy-compliant clinical search system that combines database intelligence, cloud AI services, and secure API development into one integrated solution.
+
 
 
 
