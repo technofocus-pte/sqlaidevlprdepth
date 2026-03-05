@@ -94,17 +94,18 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image10.png)
 
-6.  On Management page,
+6.  On Management page, enable the following information.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image11.png)
+		- Enable system assigned maanaged identity
     
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image12.png)
+    	- Enable peridodic assessment
 
-7.  Click on **SQL Server management** tab
+
+8.  Click on **SQL Server management** tab
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image13.png)
 
-8.  On SQL server setting spage,select below values and then click on
+9.  On SQL server setting spage,select below values and then click on
     **Review + create.**
 
     SQL connectivity : Public(internet)
@@ -113,17 +114,17 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image14.png)
 
-9.  Once the validation is passed, click on **Create**.
+10.  Once the validation is passed, click on **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image15.png)
 
-10. Wait for the deployment to complete.
+11. Wait for the deployment to complete.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image16.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image17.png)
 
-11. Copy the Public IP Address to connect from SSMS in next task
+12. Copy the Public IP Address to connect from SSMS in next task
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image18.png)
 
@@ -229,7 +230,40 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image38.png)
 
-## Exercise 4: Enable SQL Server 2025 AI Capabilities
+### Exercise 4: Create Storage Account, and Container
+
+1. Select Storage accounts, and enter the following.
+
+	- Name: +++sai@lab.labinstance.id+++
+
+	- Subscription: **@lab.CloudSubscription.Name**
+
+    - Resource Group: **@lab.CloudResourceGroup(ResourceGroup1).Name**
+
+    - Region: **@lab.CloudResourceGroup(ResourceGroup1).Location**
+
+    - Prefered storage account type: **Azure Blob Storage or Azure Data Lake Storage Gen2**
+      
+4. Leave everything else default, select **Review + Create**, and select **Create**
+
+5. Wait for the deployment successful and click on **Go to resource**.
+
+6. Expand Data storage, and select **Containers**.
+
+7. Select **+ Add Container**
+
+8. In Name enter +++public+++
+
+9. Select **Create**
+
+10. Select your public container
+
+11. Select upload, browse for files, and in Lab files folder select the **clinical_reports.csv** file
+
+12. Select **Upload**
+
+
+## Exercise 5: Enable SQL Server 2025 AI Capabilities
 
 1.  In SSMS → New Query → run the below query
 
@@ -355,7 +389,7 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image46.png)
 
-## Exercise 5: Azure OpenAI Integration (SQL Server 2025 Pattern)
+## Exercise 6: Azure OpenAI Integration (SQL Server 2025 Pattern)
 
 1.  Update below query with Azure OpenAI key and run to create
     Credential for Azure OpenAI
@@ -397,7 +431,7 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image49.png)
 
-## Exercise 6: Create Embeddings Table
+## Exercise 7: Create Embeddings Table
 
 1.  Run below query
 
@@ -427,7 +461,7 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image51.png)
 
-## Exercise 7: Create Vector Index (DiskANN) and Exact vs ANN Search
+## Exercise 8: Create Vector Index (DiskANN) and Exact vs ANN Search
 
 1.  Run below query to create vector indexx
 
@@ -532,7 +566,7 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image55.png)
 
-## Exercise 8: Secure with Managed Identity
+## Exercise 9: Secure with Managed Identity
 
 1.  Enable VM Managed Identity
 
@@ -556,7 +590,7 @@ By the end of this lab, participants will be able to:
     GO
     ```
 
-## Exercise 9: Apply Masking + RBAC
+## Exercise 10: Apply Masking + RBAC
 
 1.  Run the query
 
@@ -572,7 +606,7 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image57.png)
 
-## Exercise 10: Expose the Search as a Secure API 
+## Exercise 11: Expose the Search as a Secure API 
 
 >[!Note] Make the search callable from hospital apps.
 
@@ -618,7 +652,7 @@ By the end of this lab, participants will be able to:
 
 	+++http://localhost:5000/api/report-search?Query=post-operative%20infection&TopN=3+++
 
-## Exercise 11: Build the Core Search Stored Procedure with SSMS Copilot
+## Exercise 12: Build the Core Search Stored Procedure with SSMS Copilot
 
 >[!Note] Create the semantic search logic — use free SSMS Copilot to speed up coding.
 
@@ -645,5 +679,6 @@ By the end of this lab, participants will be able to:
 ## Conclusion:
 
 By completing this lab, participants have successfully provisioned infrastructure, enabled SQL Server 2025 AI features, generated vector embeddings using Azure OpenAI, implemented semantic search with DiskANN indexing, and secured sensitive patient data using masking and role-based access control. They also exposed the search functionality as a secure REST API for hospital applications. Overall, learners gained practical experience in building an end-to-end AI-powered, privacy-compliant clinical search system that combines database intelligence, cloud AI services, and secure API development into one integrated solution.
+
 
 
