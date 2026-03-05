@@ -250,17 +250,21 @@ By the end of this lab, participants will be able to:
 
 6. Expand Data storage, and select **Containers**.
 
-7. Select **+ Add Container**
+7. Select **+ Add Container**.
 
-8. In Name enter +++public+++
+8. In Name enter +++public+++.
 
-9. Select **Create**
+9. Select **Create**.
 
-10. Select your public container
+10. Select your public container.
 
-11. Select upload, browse for files, and in Lab files folder select the **clinical_reports.csv** file
+11. Select upload, browse for files, and in Lab files folder select the **clinical_reports.csv** file.
 
-12. Select **Upload**
+12. Select **Upload**.
+
+13. Expand Settings, and select **Share acess tokens**.
+
+14. Select **Genetrate SAS token and URL**, and copy the Blob SAS token to a notepad to use later in the lab.
 
 
 ## Exercise 5: Enable SQL Server 2025 AI Capabilities
@@ -679,6 +683,7 @@ By the end of this lab, participants will be able to:
 ## Conclusion:
 
 By completing this lab, participants have successfully provisioned infrastructure, enabled SQL Server 2025 AI features, generated vector embeddings using Azure OpenAI, implemented semantic search with DiskANN indexing, and secured sensitive patient data using masking and role-based access control. They also exposed the search functionality as a secure REST API for hospital applications. Overall, learners gained practical experience in building an end-to-end AI-powered, privacy-compliant clinical search system that combines database intelligence, cloud AI services, and secure API development into one integrated solution.
+
 
 
 
