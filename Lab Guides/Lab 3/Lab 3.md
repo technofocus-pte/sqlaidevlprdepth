@@ -350,13 +350,13 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image43.png)
 
-7.  Run below query to create External Data Source
+7.  Run below query to create External Data Source. **Note: Replace the storage account name in the query 'LOCATION'**
 
     ```
     CREATE EXTERNAL DATA SOURCE ClinicalReportsBlob
     WITH (
         TYPE = BLOB_STORAGE,
-        LOCATION = 'https://<storageaccount>.blob.core.windows.net/clinical-reports',
+        LOCATION = 'https://<storageaccount>.blob.core.windows.net/clinical-reports.csv',
         CREDENTIAL = ClinicalReportsBlobCred
     );
     GO
@@ -637,3 +637,4 @@ By the end of this lab, participants will be able to:
 ## Conclusion:
 
 By completing this lab, participants have successfully provisioned infrastructure, enabled SQL Server 2025 AI features, generated vector embeddings using Azure OpenAI, implemented semantic search with DiskANN indexing, and secured sensitive patient data using masking and role-based access control. They also exposed the search functionality as a secure REST API for hospital applications. Overall, learners gained practical experience in building an end-to-end AI-powered, privacy-compliant clinical search system that combines database intelligence, cloud AI services, and secure API development into one integrated solution.
+
