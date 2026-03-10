@@ -218,7 +218,7 @@ By the end of this lab, participants will be able to:
 
 6. Expand Data storage, and select **Containers**.
 
-7. Select **Create New Container**.
+7. Select **add Container** then select **Create New Container**.
 
 8. In Name enter +++public+++.
 
@@ -234,9 +234,13 @@ By the end of this lab, participants will be able to:
 
 14. Select **Genetrate SAS token and URL**, and copy the Blob SAS token to a notepad to use later in the lab.
 
+15. Go to the **Storage Account**, select **Data Storage**, **Containers** and select your **public** container.
+
+16. Select **Change Access Level** and select **Container (anonymous read access for containers and blob)**
+
 ## Exercise 4: Connect SQL server 2025 via SSMS 
 
-1.  Double click on SSMS from task bar and select **Sign in with Microsoft**
+1.  Double click on SSMS from task bar and select **Sign in** in the top right corner.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image33.png)
 
@@ -327,14 +331,13 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image41.png)
 
-5.  Run below query to **Create Master Key.** **Replace** YourStrongPassword123! With your password.
-
+5.  Run below query to **Create Master Key.**
     ```
     USE ContosoClinicalReports;
     GO
     IF NOT EXISTS (SELECT 1 FROM sys.symmetric_keys WHERE name = '##MS_DatabaseMasterKey##')
     BEGIN
-        CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'YourStrongPassword123!';
+        CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'AZvmsql12345!';
     END
     GO 
     ```
@@ -395,6 +398,8 @@ By the end of this lab, participants will be able to:
 
     +++SELECT COUNT(\*) FROM dbo.ClinicalReports;+++
 
+    >[!Alert] If you receive an error, try running +++SELECT TOP 10 * FROM dbo.ClinicalReports+++ to verify there is data being stored.
+
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image46.png)
 
 ## Exercise 6: Azure OpenAI Integration (SQL Server 2025 Pattern)
@@ -421,7 +426,7 @@ By the end of this lab, participants will be able to:
         API_FORMAT = 'Azure OpenAI',
         MODEL_TYPE = EMBEDDINGS,
         MODEL      = 'text-embedding-3-small',
-        CREDENTIAL = [https://azsqlaoai0216.openai.azure.com/],
+        CREDENTIAL = ClinicalReportsBlobCred,
         PARAMETERS = '{ "sql_rest_options": { "retry_count": 10 } }'
     );
     GO
@@ -431,11 +436,7 @@ By the end of this lab, participants will be able to:
 
 3.  Run below query to test the embeddings
 
-    ```
-    SELECT AI_GENERATE_EMBEDDINGS(N'Patient with fever and cough' USE MODEL 
-    ClinicalEmbeddingModel) AS Emb;
-    GO
-    ```
+    `SELECT AI_GENERATE_EMBEDDINGS(N'Patient with fever and cough' USE MODEL ClinicalEmbeddingModel) AS Emb;`
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image49.png)
 
@@ -641,5 +642,6 @@ By the end of this lab, participants will be able to:
 ## Conclusion:
 
 By completing this lab, participants have successfully provisioned infrastructure, enabled SQL Server 2025 AI features, generated vector embeddings using Azure OpenAI, implemented semantic search with DiskANN indexing, and secured sensitive patient data using masking and role-based access control. They also exposed the search functionality as a secure REST API for hospital applications. Overall, learners gained practical experience in building an end-to-end AI-powered, privacy-compliant clinical search system that combines database intelligence, cloud AI services, and secure API development into one integrated solution.
+
 
 
