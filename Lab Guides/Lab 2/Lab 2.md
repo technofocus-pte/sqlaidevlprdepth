@@ -373,9 +373,9 @@ By completing this lab, you will be able to:
 
     - Schema : **dbo**
 
-    - Table name: +++library_books+++
+    - Table name: +++MedicalResearch+++
 
-    - SQL server authentication password: +++pa55w0rd12345+++
+    - SQL server authentication password: +++Pa55w0rd12345+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image67.png)
 
@@ -610,6 +610,7 @@ chat to create a complete end-to-end solution. Most importantly, you
 ensured that every response is grounded in verified medical research,
 demonstrating how AI can be used responsibly and effectively in
 real-world healthcare and research environments.
+
 
 
 
