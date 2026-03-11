@@ -65,6 +65,12 @@ By completing this lab, participants will be able to:
 7.  Select **Authentication** type as **SQL Login** and enter the
     **username** and **password** for SQL authentication.
 
+	- Enter admin details as below:
+
+	- Username : +++sqlvmuser+++
+
+	- Password: +++AZvmsql12345+++
+
 8.  Initially, you can enter the database name as +++master+++. Click on
     **Connect**.
 
@@ -122,12 +128,12 @@ By completing this lab, participants will be able to:
     CREATE SCHEMA core;
     GO
     CREATE TABLE core.Products (
-    ProductID INT PRIMARY KEY IDENTITY(1,1),
-    ProductName NVARCHAR(100),
-    Category NVARCHAR(50),
-    Price DECIMAL(10,2),
-    StockQuantity INT,
-    CreatedDate DATETIME DEFAULT GETDATE()
+	    ProductID INT PRIMARY KEY IDENTITY(1,1),
+	    ProductName NVARCHAR(100),
+	    Category NVARCHAR(50),
+	    Price DECIMAL(10,2),
+	    StockQuantity INT,
+	    CreatedDate DATETIME DEFAULT GETDATE()
     );
     ```
 
@@ -506,7 +512,7 @@ Goal: Apply role-based access and masking
     ![A screenshot of a computer Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image47.png)
 
-3.  Navigate to **File Explorer** and create **a new folder**.
+3.  Navigate to **File Explorer** and create **a new folder** on the Desktop.
 
     ![A screenshot of a computer Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image48.png)
@@ -529,9 +535,8 @@ Goal: Apply role-based access and masking
 
 7.  Once you have opened the folder, check the connection as it might
     get disconnected. If you see a red dot, this means it is
-    disconnected. To **connect** again, click on the Server and enter
-    the password that you have mentioned in the VM for the Server and
-    press **Enter**.
+    disconnected. To **connect** again, click on the **Connection Dialogue Box**, Look on the right side for **Saved connections**, select the lone saved connection to the Master DB and enter
+    the password +++AZvmsql12345+++ and press **connect**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image52.png)
 
@@ -711,6 +716,7 @@ end of this exercise, you not only created a functional inventory system
 but also experienced how modern SQL development combines database
 design, AI assistance, governance, and API integration to build
 scalable, secure, and application-ready data solutions.
+
 
 
 
