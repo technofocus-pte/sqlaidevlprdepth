@@ -33,18 +33,18 @@ By the end of this lab, participants will be able to:
     Azure subscription account. Enter **Azure SQL** in the search bar
     and select it.
 
-    ![](./media/image1.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image1.png)
 
 2.  In the pane for **SQL Server on Azure Virtual Machines**,
     select **Show options**.
 
-    ![](./media/image2.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image2.png)
 
 3.  In the **Select an image offer** box, choose a SQL Server image
     (such as **Free SQL Server License: SQL Server 2025 Enterprise
     Developer on Windows Server 2025**). Select **Create virtual machine**.
 
-    ![](./media/image3.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image3.png)
 
 4.  On the **Basics** tab, provide the following information and then
     click **Next: Disk**
@@ -82,21 +82,21 @@ By the end of this lab, participants will be able to:
     - Under **Inbound port rules**, choose **Allow selected ports**, and
     then select **RDP (3389)** from the dropdown list.
 
-    ![](./media/image4.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image4.png)
 
-    ![](./media/image5.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image5.png)
 
-    ![](./media/image6.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image6.png)
 
-    ![](./media/image7.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image7.png)
 
-    ![](./media/image8.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image8.png)
 
-    ![](./media/image9.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image9.png)
 
 5.  Keep default disk type values and click **Next: Networking**
 
-    ![](./media/image10.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image10.png)
 
 6.  On **Management** tab:
 
@@ -104,13 +104,13 @@ By the end of this lab, participants will be able to:
 
     - Enable periodic assessment
 
-    ![](./media/image11.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image11.png)
     
-    ![](./media/image12.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image12.png)
 
 7.  Navigate to **SQL Server settings** tab.
 
-    ![](./media/image13.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image13.png)
 
 8.  On SQL server setting page, select below values and then click on
     **Review + create.**
@@ -119,31 +119,31 @@ By the end of this lab, participants will be able to:
 
     - **SQL authentication**: Enable
 
-    ![](./media/image14.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image14.png)
 
 9.  Once the validation is passed, click on **Create**.
 
-    ![](./media/image15.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image15.png)
 
 10. Wait for the deployment to complete.
 
-    ![](./media/image16.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image16.png)
 
-    ![](./media/image17.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image17.png)
 
 11. Copy the **Public IP address** to connect from SSMS in next task.
 
-    ![](./media/image18.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image18.png)
 
 ## Exercise 2: Create Azure OpenAI resource and deploy embedding models
 
 1.  Switch back to Azure and search for +++Azure OpenAI+++ and select it.
 
-    ![](./media/image19.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image19.png)
 
 2.  Click on **Create** and then select **Azure OpenAI** from the dropdown.
 
-    ![](./media/image20.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image20.png)
 
 3.  Etner below values and click **Next**.
 
@@ -157,53 +157,53 @@ By the end of this lab, participants will be able to:
 
     Pricing tier – Select **Standard S0**
 
-    ![](./media/image21.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image21.png)
 
 4.  Keep the default value and click Next.
 
-    ![](./media/image22.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image22.png)
 
 5.  Keep default tag and click Next.
 
-    ![](./media/image23.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image23.png)
 
 6.  Review the details and click **Create**.
 
-    ![](./media/image24.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image24.png)
 
 7.  Wait for the deployment successful and click on **Go to resource.**
 
-    ![](./media/image25.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image25.png)
 
 8.  Expand **Resource management** and select **keys and endpoints** from left
     navigation menu and copy **endpoint and key** value to a notepad to
     use in next tasks.
 
-    ![](./media/image26.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image26.png)
 
 9.  Click on **Overview** and select **Go to Foundry portal**
 
-    ![](./media/image27.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image27.png)
 
 10. Click on **Deployments** under Shared resource from left navigation
     menu. Select **Deploy model-\> Deploy base model.**
 
-    ![](./media/image28.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image28.png)
 
 11. Search for +++text-embedding+++ , select **text-embedding-3-small**
     model and click **Confirm**.
 
-    ![](./media/image29.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image29.png)
 
 12. Keep the default values and click **Customize**.
 
-    ![](./media/image30.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image30.png)
 
 13. Set Tokens per Minute Rate limit to max and click **Deploy**.
 
-    ![](./media/image31.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image31.png)
 
-    ![](./media/image32.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image32.png)
 
 ## Exercise 3: Create Storage account and Store the file
 
@@ -222,81 +222,81 @@ By the end of this lab, participants will be able to:
     Lake Storage Gen2
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image33.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image33.png)
 
 2.  Click on **Create**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image34.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image34.png)
 
 3.  Wait for the deployment successful and select on **Go to resource**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image35.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image35.png)
 
 4.  Expand **Data storage from the left menu** and
     select **Containers**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image36.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image36.png)
 
 5.  Select **Add Container**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image37.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image37.png)
 
 6.  Enter container name as +++public+++ and click on **Create**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image38.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image38.png)
 
 7.  Select your **public** container.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image39.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image39.png)
 
 8.  Click on **Upload**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image40.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image40.png)
 
 9.  Browse for files, and navigate to C:\LabFiles folder select
     the **clinical_reports.csv** file. Click on **Upload**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image41.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image41.png)
 
 10. Expand **Settings**, and select **Share acess tokens**.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image42.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image42.png)
 
 11. Select **Generate SAS token and URL**, and copy the **Blob SAS
     token** to a notepad to use later in the lab.
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image43.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image43.png)
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image44.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image44.png)
 
 ## Exercise 4: Connect SQL server 2025 via SSMS 
 
 1.  Doble click on SSMs form task bar and select **Sign in with Microsoft**
 
-    ![](./media/image45.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image45.png)
 
 2.  Select Work or School account and click Continue.
 
-    ![](./media/image46.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image46.png)
 
 3.  Sign in with your assigned cloud slice account.
 
-    ![](./media/image47.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image47.png)
 
-    ![](./media/image48.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image48.png)
 
-    ![](./media/image49.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image49.png)
 
 12. Enter below details and click **Continue**.
 
@@ -306,7 +306,7 @@ By the end of this lab, participants will be able to:
 
     - Select **Trust Server certificate** checkbox
 
-    ![](./media/image50.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image50.png)
 
 ## Exercise 5: Enable SQL Server 2025 AI Capabilities
 
@@ -320,7 +320,7 @@ By the end of this lab, participants will be able to:
     ```
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image51.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image51.png)
 
 2.  Run below query to enable outbound REST.
 
@@ -333,7 +333,7 @@ By the end of this lab, participants will be able to:
     GO
     ```
 
-    ![](./media/image52.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image52.png)
 
 3.  Run below query to **enable preview features in database.** This
     enables VECTOR type , VECTOR INDEX , AI_GENERATE_EMBEDDINGS and
@@ -347,7 +347,7 @@ By the end of this lab, participants will be able to:
     GO
     ```
 
-    ![](./media/image53.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image53.png)
 
 4.  Run below query to create ClinicalReports table
 
@@ -365,7 +365,7 @@ By the end of this lab, participants will be able to:
     GO
     ```
 
-    ![](./media/image54.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image54.png)
 
 5.  Run below query to **Create Master Key.**
 
@@ -382,7 +382,7 @@ By the end of this lab, participants will be able to:
     GO 
     ```
 
-    ![](./media/image55.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image55.png)
 
 6.  Run below query to create Database Scoped Credential.
 
@@ -398,7 +398,7 @@ By the end of this lab, participants will be able to:
     ```
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image56.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image56.png)
 
 7.  Run below query to create External Model.
 
@@ -420,9 +420,9 @@ Portal and Credential value with OpenAI Endpoint.**
     GO 
     ```
 
-    ![](./media/image57.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image57.png)
 
-    ![](./media/image58.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image58.png)
 
 8.  Run below query to create Credential for Blob Storage.
 
@@ -437,7 +437,7 @@ Portal and Credential value with OpenAI Endpoint.**
     ```
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image59.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image59.png)
 
 9.  Run below query to create the external data source credential.
 
@@ -455,7 +455,7 @@ Portal and Credential value with OpenAI Endpoint.**
     ```
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image60.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image60.png)
 
 10.  Run below query to bulk insert:
 
@@ -478,7 +478,7 @@ Portal and Credential value with OpenAI Endpoint.**
     GO
     ```
 
-    ![](./media/image61.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image61.png)
 
 11.  Run below query to verify the table data:
 
@@ -486,7 +486,7 @@ Portal and Credential value with OpenAI Endpoint.**
     SELECT COUNT(*) FROM dbo.ClinicalReports;
     ```
 
-    ![](./media/image62.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image62.png)
 
 ## Exercise 6: Azure OpenAI Integration (SQL Server 2025 Pattern)
 
@@ -501,7 +501,7 @@ Portal and Credential value with OpenAI Endpoint.**
     GO
     ```
 
-    ![](./media/image63.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image63.png)
 
 ## Exercise 7: Create Embeddings Table
 
@@ -519,7 +519,7 @@ Portal and Credential value with OpenAI Endpoint.**
     GO
     ```
 
-    ![](./media/image64.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image64.png)
 
 2.  Run below query
 
@@ -531,7 +531,7 @@ Portal and Credential value with OpenAI Endpoint.**
     GO
     ```
 
-    ![](./media/image65.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image65.png)
 
 **Note:** As the number of rows are too much, session can be interrupted
 sometimes. In this case, you can load the embeddings in two batches.
@@ -554,7 +554,7 @@ You can check how many rows are processed:
     ```
 
     ![A screenshot of a computer Description automatically
-    generated](./media/image66.png)
+    generated]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image66.png)
 
 ## Exercise 8: Create Vector Index (DiskANN) and Exact vs ANN Search
 
@@ -567,7 +567,7 @@ You can check how many rows are processed:
     GO
     ```
 
-    ![](./media/image67.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image67.png)
 
 2.  Run below query for exact search
 
@@ -586,7 +586,7 @@ You can check how many rows are processed:
     ORDER BY Distance ASC;
     ```
 
-    ![](./media/image68.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image68.png)
 
 3.  Run the query to ANN Search (DiskANN)
 
@@ -625,7 +625,7 @@ You can check how many rows are processed:
     GO
     ```
 
-    ![](./media/image69.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image69.png)
 
 4.  Run below query Measure Recall (Exact vs ANN)
 
@@ -659,7 +659,7 @@ You can check how many rows are processed:
     GO
     ```
 
-    ![](./media/image70.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image70.png)
 
 ## Exercise 9: Apply Masking + RBAC
 
@@ -675,7 +675,7 @@ You can check how many rows are processed:
     GO
     ```
 
-    ![](./media/image71.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image71.png)
 
 ## Exercise 10: Build the Core Search Stored Procedure with SSMS Copilot 
 
@@ -685,7 +685,7 @@ speed up coding.
 1.  In SSMS → Tools → Options → Copilot → Sign in with your GitHub
     account
 
-    ![](./media/image72.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image72.png)
 
 2.  New query window → open Copilot chat pane or type /copilot
 
@@ -694,14 +694,14 @@ speed up coding.
     - “Generate stored procedure for semantic search on clinical reports
       using vector embeddings and Azure OpenAI”
 
-    ![](./media/image73.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image73.png)
 
 4.  Open a new query and click **Apply** on the Copilot response, and then run
     the query
 
-    ![](./media/image74.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image74.png)
 
-    ![](./media/image75.png)
+    ![]https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image75.png)
 
 
 ## Conclusion:
