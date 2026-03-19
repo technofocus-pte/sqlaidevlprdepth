@@ -275,7 +275,7 @@ Generate queries using natural language and improve productivity.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image29.png)
 
-**Execute the Stored Procedure:** Now, we will restock the product.
+    **Execute the Stored Procedure:** Now, we will restock the product.
 
 23. Execute the stored procedure with the below given query.
 
@@ -311,7 +311,7 @@ Generate queries using natural language and improve productivity.
 
 ## **Exercise 3: Security & Governance with SQL Server 2025​**
 
-Goal- Apply role-based access and masking
+Goal - Apply role-based access and masking
 
 ### **Task 1: Assign a Role and add a user in the database**
 
@@ -358,8 +358,8 @@ Goal- Apply role-based access and masking
 
     **Execute** the query:
 
-![A screenshot of a computer Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image35.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image35.png)
 
 5.  You can now add this user to the Role. Run the below query:
 
@@ -393,11 +393,11 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
     REVERT;
     ```
 
-**What This Proves?**
+    **What This Proves?**
 
-- InventoryUser can **SELECT** because of InventoryViewer role.
+    - InventoryUser can **SELECT** because of InventoryViewer role.
 
-- If you did NOT grant UPDATE/DELETE — those operations should fail.
+    - If you did NOT grant UPDATE/DELETE — those operations should fail.
 
     ![A screenshot of a computer Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image38.png)
@@ -412,11 +412,11 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
     REVERT;
     ```
 
-When executed, you’ll receive ‘Permission denied’ error. Roles simplify
-permission management. Instead of granting permissions to each user, we
-grant them to a role and add user to that role.
+    When executed, you’ll receive ‘Permission denied’ error. Roles simplify
+    permission management. Instead of granting permissions to each user, we
+    grant them to a role and add user to that role.
 
-**You have NOT granted UPDATE/DELETE, hence. this operation failed.**
+    **You have NOT granted UPDATE/DELETE, hence. this operation failed.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image39.png)
 
@@ -430,11 +430,11 @@ grant them to a role and add user to that role.
     ADD MASKED WITH (FUNCTION = 'default()');
     ```
 
-This command modifies the **core.Products** table to apply a dynamic
-data mask on the **Price** column, so users without proper permission
-will see a masked (hidden) value instead of the actual price.
+    This command modifies the **core.Products** table to apply a dynamic
+    data mask on the **Price** column, so users without proper permission
+    will see a masked (hidden) value instead of the actual price.
 
-![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image40.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image40.png)
 
 10. **Verify as Admin (Unmasked View):** Run the below query
 
@@ -443,10 +443,10 @@ will see a masked (hidden) value instead of the actual price.
     FROM core.Products;
     ```
 
-**You will see real price values because SQL Server shows actual data
-to user with unmask permission.**
+    **You will see real price values because SQL Server shows actual data
+    to user with unmask permission.**
 
-![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image41.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image41.png)
 
 11. **Verify as Restricted User:** Now, test using your database user
     (InventoryUser)
@@ -458,10 +458,10 @@ to user with unmask permission.**
     REVERT;
     ```
 
-Just because you used - FUNCTION = 'default()' , this will hide the
-numeric values for the Masked column i.e., Price.
+    Just because you used - FUNCTION = 'default()' , this will hide the
+    numeric values for the Masked column i.e., Price.
 
-![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image42.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image42.png)
 
 12. **Grant UNMASK Permission Temporarily:**
 
@@ -609,52 +609,52 @@ Allow external applications to access database.
 
     ```
     {  
-      "$schema":
+      "$schema":
     "<https://github.com/Azure/data-api-builder/releases/download/v1.7.90/dab.draft.schema.json%22>,  
-      "data-source": {  
-        "database-type": "mssql",  
-        "connection-string":
+      "data-source": {  
+        "database-type": "mssql",  
+        "connection-string":
     "Server=20.106.17.61,1433;Database=SmartInventoryDB;User
     ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;",  
-        "options": {  
-          "set-session-context": false  
-        }  
-      },  
-      "runtime": {  
-        "rest": {  
-          "enabled": true,  
-          "path": "/api",  
-          "request-body-strict": true  
-        },  
-        "graphql": {  
-          "enabled": true,  
-          "path": "/graphql",  
-          "allow-introspection": true  
-        },  
-        "mcp": {  
-          "enabled": true,  
-          "path": "/mcp"  
-        },  
-        "host": {  
-          "cors": {  
-            "origins": \[\],  
-            "allow-credentials": false  
-          },  
-          "authentication": {  
-            "provider": "StaticWebApps"  
-          },  
-          "mode": "development"  
-        }  
-      },  
-      "entities": {  
+        "options": {  
+          "set-session-context": false  
+        }  
+      },  
+      "runtime": {  
+        "rest": {  
+          "enabled": true,  
+          "path": "/api",  
+          "request-body-strict": true  
+        },  
+        "graphql": {  
+          "enabled": true,  
+          "path": "/graphql",  
+          "allow-introspection": true  
+        },  
+        "mcp": {  
+          "enabled": true,  
+          "path": "/mcp"  
+        },  
+        "host": {  
+          "cors": {  
+            "origins": \[\],  
+            "allow-credentials": false  
+          },  
+          "authentication": {  
+            "provider": "StaticWebApps"  
+          },  
+          "mode": "development"  
+        }  
+      },  
+      "entities": {  
     "Products": {  
-        "source": "core.Products",  
-        "permissions": \[  
-        {  
-            "role": "anonymous",  
-            "actions": \["read"\]  
-        }  
-        \]  
+        "source": "core.Products",  
+        "permissions": \[  
+        {  
+            "role": "anonymous",  
+            "actions": \["read"\]  
+        }  
+        \]  
     }  
     }  
     }
@@ -669,13 +669,13 @@ Allow external applications to access database.
     dab start
     ```
 
-**Note**: Make sure you don’t close this terminal. You can expand or
-collapse if needed.
+    >[!Note] Make sure you don’t close this terminal. You can expand or
+    collapse if needed.
 
-![A screenshot of a computer program Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image62.png)
+    ![A screenshot of a computer program Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image62.png)
 
-![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image63.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image63.png)
 
 17. Open your browser and navigate to this url. You should see JSON
     output. This means that now SQL is exposed as REST API.
@@ -684,26 +684,26 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
     http://localhost:5000/api/Products
     ```
 
-![A screen shot of a computer Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image64.png)
+    ![A screen shot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image64.png)
 
 18. Now, it’s time to test GraphQL. Navigate to VS Code. Find the
     graphql mode as **production**. You need to update it as
     **development**. When DAB runs in **production mode**, it disables
     the GraphQL UI (Playground).
 
-![A screenshot of a computer program Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image65.png)
+    ![A screenshot of a computer program Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image65.png)
 
-![A screenshot of a computer program Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image66.png)
+    ![A screenshot of a computer program Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image66.png)
 
 19. Expand the terminal if it is collapsed and press **Ctrl + C** to
     shutdown the dab that you have started using dab start command.
 
-Once you press Ctrl+C, you will see that application is shutting down.
+    Once you press Ctrl+C, you will see that application is shutting down.
 
-![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image67.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image67.png)
 
 20. Again, start the Data Api Builder:
 
@@ -711,11 +711,11 @@ Once you press Ctrl+C, you will see that application is shutting down.
     dab start
     ```
 
-![A screenshot of a computer program Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image68.png)
+    ![A screenshot of a computer program Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image68.png)
 
-![A screen shot of a computer program Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image69.png)
+    ![A screen shot of a computer program Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image69.png)
 
 21. Navigate to your browser and enter the graphql url:
 
@@ -729,8 +729,8 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
 
     Click on **Browse Schema** on the Homepage and Navigate to **Operation** tab.
 
-![A screenshot of a computer Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image70.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image70.png)
 
 22. Inside the **Nitro** interface, in the left panel – write the below
     query and click on **Run**.
@@ -750,7 +750,7 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
     }
     ```
 
-    **Note:** If you remember, we have specified the table name as
+    >[!Note] If you remember, we have specified the table name as
     ‘Products’- means with capital P and here, in the query we are writing
     it as ‘products’. The reason is that DAB automatically generates GraphQL
     entities in lowercase (unless explicitly configured).
@@ -759,8 +759,8 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
 
     Your GraphQL entity is: **products**
 
-![A screenshot of a computer Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image71.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image71.png)
 
 23. You should see results on the right side. If your table has data, it
     will return the rows. When you run that query, GraphQL translates
@@ -769,8 +769,8 @@ generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/re
     You will see the Products table data from the database including all
     the electronic products – Laptop, Office Chair, Mouse…
 
-![A screenshot of a computer Description automatically
-generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image72.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image72.png)
 
 ## **Conclusion​**
 
