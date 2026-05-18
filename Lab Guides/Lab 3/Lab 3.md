@@ -35,18 +35,22 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image1.png)
 
-2.  In the pane for **SQL Server on Azure Virtual Machines**,
+2.  Expand SQL Server from the left pane and select **SQL Server on Azure VMs** option.
+
+	
+   
+4.  In the pane for **SQL Server on Azure Virtual Machines**,
     select **+ Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image2.png)
 
-3.  In the **Select an image offer** box, choose a SQL Server image
+5.  In the **Select an image offer** box, choose a SQL Server image
     (such as **Free SQL Server License: SQL Server 2025 Enterprise
     Developer on Windows Server 2025**). Select **Create virtual machine**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image3.png)
 
-4.  On the **Basics** tab, provide the following information and then
+6.  On the **Basics** tab, provide the following information and then
     click **Next: Disk**
 
     - Subscription : @lab.CloudSubscription.Name
@@ -93,11 +97,11 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image9.png)
 
-5.  Keep default disk type values and click **Next: Networking**
+7.  Keep default disk type values and click **Next: Networking**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image10.png)
 
-6.  On **Management** tab:
+8.  On **Management** tab:
 
     - Enable system assigned management identity
 
@@ -107,11 +111,11 @@ By the end of this lab, participants will be able to:
     
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image12.png)
 
-7.  Navigate to **SQL Server settings** tab.
+9.  Navigate to **SQL Server settings** tab.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image13.png)
 
-8.  On SQL server setting page, select below values and then click on
+10.  On SQL server setting page, select below values and then click on
     **Review + create.**
 
     - **SQL connectivity**: Public(internet)
@@ -120,17 +124,17 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image14.png)
 
-9.  Once the validation is passed, click on **Create**.
+11.  Once the validation is passed, click on **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image15.png)
 
-10. Wait for the deployment to complete.
+11. Wait for the deployment to complete.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image16.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image17.png)
 
-11. Copy the **Public IP address** to connect from SSMS in next task.
+12. Copy the **Public IP address** to connect from SSMS in next task.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image18.png)
 
