@@ -556,15 +556,15 @@ By completing this lab, you will be able to:
 
 24.  Select Azure AI Search and click on **Add** tool and select **Browse more tools** from the drop-down.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image115.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image115.png)
 
 25.  Select the Azure search connection and index, and then click on Add.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image101.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image101.png)
 
 26.  Select your Azure Search tool and click on Save.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image102.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image102.png)
 
 27. Enter the prompts below and check the response
 
@@ -587,7 +587,7 @@ By completing this lab, you will be able to:
 
 15. Enter the prompt:
 
-    List books and their authors related to AI in radiology diagnostics
+    +++List books and their authors related to AI in radiology diagnostics+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image106.png)
 
@@ -605,15 +605,3 @@ chat to create a complete end-to-end solution. Most importantly, you
 ensured that every response is grounded in verified medical research,
 demonstrating how AI can be used responsibly and effectively in
 real-world healthcare and research environments.
-
-
-
-
-
-
-
-
-
-
-
-
