@@ -225,7 +225,7 @@ By completing this lab, you will be able to:
 
 1.  Switch back to Azure and search for +++Azure OpenAI+++ and select it.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image39.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image109.png)
 
 2.  Click on Create-\> Azure OpenAI.
 
