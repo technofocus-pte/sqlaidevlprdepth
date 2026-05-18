@@ -583,18 +583,18 @@ Allow external applications to access database.
 13. Edit the dab-config.json file. Replace the last empty **entities** with the below json. It should be like this:
 
     ```
-    "entities": {
-      "Products": {
-        "source": "core.Products",
-        "permissions": [
-          {
-            "role": "anonymous",
-            "actions": [ "read" ]
-          }
-        ]
+      "entities": {
+        "Products": {
+          "source": "core.Products",
+          "permissions": [
+            {
+              "role": "anonymous",
+              "actions": [ "read" ]
+            }
+          ]
+        }
       }
     }
-  }
     ```
 
   ![A screenshot of a computer program Description automatically
@@ -611,53 +611,53 @@ Allow external applications to access database.
 15. Make sure your dab-config.json file looks like this:
 
     ```
-     {
-    "$schema": "https://github.com/Azure/data-api-builder/releases/download/v1.7.93/dab.draft.schema.json",
-    "data-source": {
-      "database-type": "mssql",
-      "connection-string": "Server=20.63.91.33,1433;Database=SmartInventoryDB;User ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;",
-      "options": {
-        "set-session-context": false
-      }
-    },
-    "runtime": {
-      "rest": {
-        "enabled": true,
-        "path": "/api",
-        "request-body-strict": true
+       {
+      "$schema": "https://github.com/Azure/data-api-builder/releases/download/v1.7.93/dab.draft.schema.json",
+      "data-source": {
+        "database-type": "mssql",
+        "connection-string": "Server=20.63.91.33,1433;Database=SmartInventoryDB;User ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;",
+        "options": {
+          "set-session-context": false
+        }
       },
-      "graphql": {
-        "enabled": true,
-        "path": "/graphql",
-        "allow-introspection": true
-      },
-      "mcp": {
-        "enabled": true,
-        "path": "/mcp"
-      },
-      "host": {
-        "cors": {
-          "origins": [],
-          "allow-credentials": false
+      "runtime": {
+        "rest": {
+          "enabled": true,
+          "path": "/api",
+          "request-body-strict": true
         },
-        "authentication": {
-          "provider": "StaticWebApps"
+        "graphql": {
+          "enabled": true,
+          "path": "/graphql",
+          "allow-introspection": true
         },
-        "mode": "development"
-      }
-      },
-    "entities": {
-      "Products": {
-        "source": "core.Products",
-        "permissions": [
-          {
-            "role": "anonymous",
-            "actions": [ "read" ]
-          }
-        ]
+        "mcp": {
+          "enabled": true,
+          "path": "/mcp"
+        },
+        "host": {
+          "cors": {
+            "origins": [],
+            "allow-credentials": false
+          },
+          "authentication": {
+            "provider": "StaticWebApps"
+          },
+          "mode": "development"
+        }
+        },
+      "entities": {
+        "Products": {
+          "source": "core.Products",
+          "permissions": [
+            {
+              "role": "anonymous",
+              "actions": [ "read" ]
+            }
+          ]
+        }
       }
     }
-  }
     ```
 
 16. Now, **start the Data Api Builder.** The command dab start launches
