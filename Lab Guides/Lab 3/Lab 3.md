@@ -37,18 +37,17 @@ By the end of this lab, participants will be able to:
 
 2.  Expand SQL Server from the left pane and select **SQL Server on Azure VMs** option.
 
-	
-   
-4.  In the pane for **SQL Server on Azure Virtual Machines**,
-    select **+ Create**.
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image76.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image2.png)
+4.  Click on **Create.**
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image77.png)
 
 5.  In the **Select an image offer** box, choose a SQL Server image
     (such as **Free SQL Server License: SQL Server 2025 Enterprise
-    Developer on Windows Server 2025**). Select **Create virtual machine**.
+    Developer on Windows Server 2025**). Select **Create SQL virtual machine**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image3.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image78.png)
 
 6.  On the **Basics** tab, provide the following information and then
     click **Next: Disk**
@@ -111,7 +110,7 @@ By the end of this lab, participants will be able to:
     
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image12.png)
 
-9.  Navigate to **SQL Server settings** tab.
+9.  Navigate to the **SQL Server settings** tab.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image13.png)
 
@@ -122,19 +121,19 @@ By the end of this lab, participants will be able to:
 
     - **SQL authentication**: Enable
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image14.png)
+   ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image14.png)
 
 11.  Once the validation is passed, click on **Create**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image15.png)
+![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image15.png)
 
-11. Wait for the deployment to complete.
+12. Wait for the deployment to complete.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image16.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image17.png)
 
-12. Copy the **Public IP address** to connect from SSMS in next task.
+13. Copy the **Public IP address** to connect from SSMS in next task.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image18.png)
 
