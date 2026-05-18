@@ -225,7 +225,7 @@ By completing this lab, you will be able to:
 
 1.  Switch back to Azure and search for +++Azure OpenAI+++ and select it.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image109.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image39.png)
 
 2.  Click on Create-\> Azure OpenAI.
 
@@ -276,28 +276,28 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image48.png)
 
-11. Search for +++text-embedding+++, select **text-embedding-3-small** model
+11. Search for +++text-embedding+++, select **text-embedding-ada-002** model
     and click Confirm.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image49.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image109.png)
 
-12. Keep the default values and click Customise.
+12. Keep the default values and click **Customise**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image50.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image110.png)
 
 13. Set Tokens per Minute Rate limit to max and click Deploy.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image51.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image111.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image52.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image112.png)
 
 14. Click on Deployments from the left navigation menu, select **Deploy
     model-\> Deploy base model.**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image53.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image113.png)
 
 15. Search for +++gpt+++ models and select the **gpt-5.2-chat** model, and
-    click Confirm.
+    Click Confirm.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image54.png)
 
@@ -433,12 +433,11 @@ By completing this lab, you will be able to:
 1.  Open a new tab and go to +++https://ai.azure.com+++ and sign in with
     your Azure subscription account.
 
-2.  Click on Start building to navigate to the new Microsoft Foundry
-    portal.
+2.  Toggle the Microsoft Foundry switch to change to the new Microsoft Foundry UI.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image77.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image114.png)
 
-3.  **Click on Drop down and select Create a new project.**
+3.  **Click on the drop-down and select Create a new project.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image78.png)
 
@@ -469,15 +468,15 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image83.png)
 
-9.  Click on Knowledge from the left navigation menu.
+9.  Click on **Knowledge** from the left navigation menu.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image84.png)
 
-10. Select your AI Search service and API key then click on Connect.
+10. Select your AI Search service and API key, then click on Connect.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image85.png)
 
-11. Click on Create a Knowledge base.
+11. Click on **Create a Knowledge base**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image86.png)
 
@@ -517,8 +516,7 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image95.png)
 
-20. On Playground, expand Knowledge-\> Add and select Connect to Foundry
-    IQ.
+20. On Playground, expand Knowledge-\> Add and select Connect to Foundry IQ.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image96.png)
 
@@ -556,9 +554,9 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image99.png)
 
-24.  Select Azure AI Search and click on Add tool.
+24.  Select Azure AI Search and click on **Add** tool and select **Browse more tools** from the drop-down.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image100.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image115.png)
 
 25.  Select the Azure search connection and index, and then click on Add.
 
@@ -593,12 +591,9 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image106.png)
 
-16. Switch back to the Foundry agent tab and click on **Publish -\> Publish
-    agent.**
+16. Switch back to the Foundry agent tab and click on **Publish**. Agents are exposed through the Publish option, which generates API endpoints for integration with applications, Teams, or external services. Once published, the agent becomes accessible through the provided REST endpoint and can be consumed securely in enterprise applications.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image107.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image108.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image116.png)
 
 ## Conclusion
 
