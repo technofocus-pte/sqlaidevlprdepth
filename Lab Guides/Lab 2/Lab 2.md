@@ -189,12 +189,12 @@ By completing this lab, you will be able to:
 
 10.  Click Next on Import flat file page,
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image32.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image32.png)
 
 11.  Browse the file library_books.csv form C:\Labfiles folder, enter the
     table name as +++MedicalResearch+++ and click **Next**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image33.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image33.png)
 
 11. Preview the data and click Next.
 
