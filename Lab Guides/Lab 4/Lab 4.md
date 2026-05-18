@@ -264,7 +264,7 @@ Generate queries using natural language and improve productivity.
 
     ```
     SELECT ProductID, ProductName, StockQuantity
-    FROM Products
+    FROM core.Products
     WHERE ProductID = 1;
     ```
 
@@ -280,7 +280,7 @@ Generate queries using natural language and improve productivity.
 23. Execute the stored procedure with the below given query.
 
     ```
-    EXEC RestockProduct 
+    EXEC core.RestockProduct 
     @ProductID = 1,
     @QuantityToAdd = 10;
     ```
@@ -298,7 +298,7 @@ Generate queries using natural language and improve productivity.
 
     ```
     SELECT ProductID, ProductName, StockQuantity
-    FROM Products
+    FROM core.Products
     WHERE ProductID = 1;
     ```
 
@@ -377,7 +377,7 @@ Goal - Apply role-based access and masking
 
     ```
     SELECT ProductID, ProductName, StockQuantity
-    FROM Products;
+    FROM core.Products;
     ```
     Admin has the unrestricted access so you will be having full data visibility.
 
@@ -389,7 +389,7 @@ Goal - Apply role-based access and masking
     ```
     EXECUTE AS USER = 'InventoryUser';
     SELECT ProductID, ProductName, StockQuantity
-    FROM Products;
+    FROM core.Products;
     REVERT;
     ```
 
@@ -406,7 +406,7 @@ Goal - Apply role-based access and masking
 
     ```
     EXECUTE AS USER = 'InventoryUser';
-    UPDATE Products 
+    UPDATE core.Products 
     SET StockQuantity = 100
     WHERE ProductID = 1;
     REVERT;
@@ -452,9 +452,11 @@ Goal - Apply role-based access and masking
     (InventoryUser)
 
     ```
-    EXECUTE AS USER = InventoryUser;
+    EXECUTE AS USER = 'InventoryUser';
+
     SELECT ProductName, Price 
     FROM core.Products;
+    
     REVERT;
     ```
 
@@ -476,7 +478,7 @@ Goal - Apply role-based access and masking
     concept.
 
     ```
-    EXECUTE AS USER = InventoryUser;
+    EXECUTE AS USER = 'InventoryUser';
     SELECT ProductName, Price 
     FROM core.Products;
     REVERT;
@@ -484,6 +486,8 @@ Goal - Apply role-based access and masking
 
     ![A screenshot of a computer Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image44.png)
+
+    >[!Note] If you are not able to see the masked value as 0. You can run this query- +++REVOKE UNMASK TO InventoryUser;+++ and again test with Step 11 query.
 
 ## **Exercise 4: Exposing SQL Data to AI Applications using Data API Builder​**
 
@@ -568,8 +572,7 @@ Allow external applications to access database.
     quotes, enter this connection string and replace Public IP address in the Server and make sure UserID and password are correct. 
 
     ```
-    Server=<Public IP Address>,1433;Database=SmartInventoryDB;User
-    ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;
+    Server=<Public IP Address>,1433;Database=SmartInventoryDB;User ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;
     ```
 
     ![A screenshot of a computer program Description automatically
@@ -577,27 +580,27 @@ Allow external applications to access database.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image58.png)
 
-13. Edit the dab-config.json file. Replace the last empty ‘**entities’**
-    with the below json.
+13. Edit the dab-config.json file. Replace the last empty **entities** with the below json. It should be like this:
 
     ```
     "entities": {
-    "Products": {
+      "Products": {
         "source": "core.Products",
         "permissions": [
-        {
+          {
             "role": "anonymous",
-            "actions": ["read"]
-        }
+            "actions": [ "read" ]
+          }
         ]
+      }
     }
-    }
+  }
     ```
 
-    ![A screenshot of a computer program Description automatically
+  ![A screenshot of a computer program Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image59.png)
 
-    ![A screenshot of a computer program Description automatically
+  ![A screenshot of a computer program Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%204/media/image60.png)
 
 14. Make sure to change the **authentication provider** as “**StaticWebApps**”
@@ -608,56 +611,53 @@ Allow external applications to access database.
 15. Make sure your dab-config.json file looks like this:
 
     ```
-    {  
-      "$schema":
-    "<https://github.com/Azure/data-api-builder/releases/download/v1.7.90/dab.draft.schema.json%22>,  
-      "data-source": {  
-        "database-type": "mssql",  
-        "connection-string":
-    "Server=20.106.17.61,1433;Database=SmartInventoryDB;User
-    ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;",  
-        "options": {  
-          "set-session-context": false  
-        }  
-      },  
-      "runtime": {  
-        "rest": {  
-          "enabled": true,  
-          "path": "/api",  
-          "request-body-strict": true  
-        },  
-        "graphql": {  
-          "enabled": true,  
-          "path": "/graphql",  
-          "allow-introspection": true  
-        },  
-        "mcp": {  
-          "enabled": true,  
-          "path": "/mcp"  
-        },  
-        "host": {  
-          "cors": {  
-            "origins": \[\],  
-            "allow-credentials": false  
-          },  
-          "authentication": {  
-            "provider": "StaticWebApps"  
-          },  
-          "mode": "development"  
-        }  
-      },  
-      "entities": {  
-    "Products": {  
-        "source": "core.Products",  
-        "permissions": \[  
-        {  
-            "role": "anonymous",  
-            "actions": \["read"\]  
-        }  
-        \]  
-    }  
-    }  
+     {
+    "$schema": "https://github.com/Azure/data-api-builder/releases/download/v1.7.93/dab.draft.schema.json",
+    "data-source": {
+      "database-type": "mssql",
+      "connection-string": "Server=20.63.91.33,1433;Database=SmartInventoryDB;User ID=sqlvmuser;Password=AZvmsql12345;TrustServerCertificate=True;",
+      "options": {
+        "set-session-context": false
+      }
+    },
+    "runtime": {
+      "rest": {
+        "enabled": true,
+        "path": "/api",
+        "request-body-strict": true
+      },
+      "graphql": {
+        "enabled": true,
+        "path": "/graphql",
+        "allow-introspection": true
+      },
+      "mcp": {
+        "enabled": true,
+        "path": "/mcp"
+      },
+      "host": {
+        "cors": {
+          "origins": [],
+          "allow-credentials": false
+        },
+        "authentication": {
+          "provider": "StaticWebApps"
+        },
+        "mode": "development"
+      }
+      },
+    "entities": {
+      "Products": {
+        "source": "core.Products",
+        "permissions": [
+          {
+            "role": "anonymous",
+            "actions": [ "read" ]
+          }
+        ]
+      }
     }
+  }
     ```
 
 16. Now, **start the Data Api Builder.** The command dab start launches
