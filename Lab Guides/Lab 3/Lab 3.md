@@ -147,13 +147,13 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image20.png)
 
-3.  Enter below values and click **Next**.
+3.  Enter the values below and click **Next**.
 
     Subscription : **@lab.CloudSubscription.Name**
 
     Resource Group – **@lab.CloudResourceGroup(ZAVA-Connect-RG).Name**
 
-    Region – **@lab.CloudResourceGroup(ZAVA-Connect-RG).Location**
+    Region – **East US**
 
     Name : +++azsqlaoai@lab.LabInstance.Id+++
 
