@@ -404,14 +404,14 @@ GO
 
 3.  Run below query to validate embeddings:
 
-    +++SELECT COUNT(*) AS TotalEmbeddings FROM dbo.PatientEmbeddings;+++
-    +++SELECT * FROM dbo.PatientEmbeddings;+++
+    +++SELECT COUNT(\*) AS TotalEmbeddings FROM dbo.PatientEmbeddings;+++
+	+++SELECT \* FROM dbo.PatientEmbeddings;+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image45.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image46.png)
 
-4.  Run the query to create a vector index (DiskANN)
+5.  Run the query to create a vector index (DiskANN)
 
     ```
     USE ContosoHospitalDB;
