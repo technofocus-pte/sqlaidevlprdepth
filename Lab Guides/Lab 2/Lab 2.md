@@ -347,7 +347,7 @@ By completing this lab, you will be able to:
 
 ## Exercise 6: Create Search Index
 
-1.  Switch back to the AI Service tab and click on **Import data(new)**
+1.  Switch back to the AI Service tab and click on **Import data**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image64.png)
 
@@ -391,7 +391,7 @@ By completing this lab, you will be able to:
 
     - Azure OpenAI Service: **azsqlaoai@lab.labinstance.id-lab2**
 
-    - Model deployment : text-embedding-3-small
+    - Model deployment : text-embedding-ada-002
 
     - Authentication type : API key
 
