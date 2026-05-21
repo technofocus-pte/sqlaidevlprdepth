@@ -338,8 +338,8 @@ GO
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image41.png)
 
-4.  Update below query with Azure openAI end point and Embeddign smodel
-    location (Foundry portal ) and run to create external model
+4.  Update the below query with the Azure OpenAI endpoint and embedding model
+    location (Foundry portal) and run to create an external model. **Note: Copy the target URL of the Azure OpenAI model (text-embedding-ada-002) from the Microsoft Foundry portal.**
 
     ```
     USE ContosoHospitalDB;
@@ -355,7 +355,7 @@ GO
     LOCATION   = 'https://<resource>.openai.azure.com/openai/deployments/<embedding-deployment>/embeddings?api-version=2024-02-01',
     API_FORMAT = 'Azure OpenAI',
     MODEL_TYPE = EMBEDDINGS,
-    MODEL      = 'text-embedding-3-small',
+    MODEL      = 'text-embedding-ada-002',
     CREDENTIAL = [https://<resource>.openai.azure.com/],
     PARAMETERS = '{ "sql_rest_options": { "retry_count": 10 } }'
     );
@@ -404,14 +404,14 @@ GO
 
 3.  Run below query to validate embeddings:
 
-    `SELECT COUNT(*) AS TotalEmbeddings FROM dbo.PatientEmbeddings;`
-    `SELECT * FROM dbo.PatientEmbeddings;`
+    +++SELECT COUNT(*) AS TotalEmbeddings FROM dbo.PatientEmbeddings;+++
+    +++SELECT * FROM dbo.PatientEmbeddings;+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image45.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image46.png)
 
-4.  Run below query to create vector index (DiskANN)
+4.  Run the query to create a vector index (DiskANN)
 
     ```
     USE ContosoHospitalDB;
@@ -463,7 +463,7 @@ meaning** to a doctor's query, using vector embeddings.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image48.png)
 
-2.  Run semantic search with clinical filters.this query filters
+2.  Run semantic search with clinical filters. This query filters
     Department = Pulmonology and Age group = 60–74
 
     ```
@@ -497,7 +497,7 @@ meaning** to a doctor's query, using vector embeddings.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image49.png)
 
-3.  Run below query to add clinical filter
+3.  Run the query to add a clinical filter
 
     ```
     USE ContosoHospitalDB;
@@ -602,7 +602,7 @@ meaning** to a doctor's query, using vector embeddings.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image53.png)
 
-2.  Run below query to test embedding generation:
+2.  Run the query below to test embedding generation:
 
     +++SELECT AI_GENERATE_EMBEDDINGS(N'test case' USE MODEL ClinicalEmbeddingModel);+++
 
@@ -619,8 +619,8 @@ meaning** to a doctor's query, using vector embeddings.
     ```
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image55.png)
 
-4.  Run below query with and without department filter. Observe:Mix of
-    departments,Cardiology,Emergency,Internal Medicine.
+4.  Run the query below with and without the department filter. Observe: Mix of
+    departments, Cardiology, Emergency, and Internal Medicine.
 
     ```
     EXEC dbo.FindSimilarPatientCases
@@ -659,11 +659,9 @@ meaning** to a doctor's query, using vector embeddings.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image59.png)
 
-1. Exit and close **SSMS** and do NOT save. 
+8. Exit and close **SSMS** and do NOT save. 
 
 ## Conclusion:
 
 This lab demonstrates how SQL Server 2025 evolves beyond a traditional relational database into an AI-powered data platform. By integrating Azure OpenAI embeddings directly within SQL, participants build a semantic case retrieval agent that allows doctors to search patient cases using natural language. Through vector indexing, cosine similarity search, and hybrid filtering, learners gain hands-on experience in implementing real-world AI-driven clinical search solutions inside the database engine.
-
-
 
