@@ -32,21 +32,23 @@ In this lab, participants work with a realistic healthcare scenario at Contoso M
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image1.png)
 
-2.  In the pane for **SQL Server on Azure Virtual Machines**,
-    select **Show options**.
+2.  From the left pane, expand **SQL Server** and select **SQL Server on Azure VMs** option. 
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image2.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image70.png)
 
-3.  In the **Select an image offer** box, choose a SQL Server image
+3.  Click on **Create**.
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image71.png)
+
+4.  In the **Select an image offer** dropdown, choose a SQL Server image
     (such as **Free SQL Server License: SQL Server 2025 Enterprise Developer on Windows Server 2025**).
-    Select **Create virtual machine**.
+    Select **Create SQL virtual machine**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image3.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image72.png)
 
-4.  On the **Basics** tab, provide the following information and then
-    click **Next: Disk**
+5.  On the **Basics** tab, provide the following information and then click **Next: Disk**
 
-    - Subscription : **@lab.CloudSubscription.Name**
+    - Subscription: **@lab.CloudSubscription.Name**
 
     - Resource Group: **@lab.CloudResourceGroup(ResourceGroup1).Name**
 
@@ -68,7 +70,7 @@ In this lab, participants work with a realistic healthcare scenario at Contoso M
 
     - Enter admin details as below:
 
-	    Username : +++sqlvmuser+++
+	    Username: +++sqlvmuser+++
 
 	    Password: +++AZvmsql12345+++
 
@@ -87,21 +89,21 @@ In this lab, participants work with a realistic healthcare scenario at Contoso M
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image9.png)
 
-5.  Keep default disk type values and click **Next: Networking**
+6.  Keep default disk type values and click **Next: Networking**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image10.png)
 
-6.  On Management page,
+7.  On Management page,
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image11.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image12.png)
 
-7.  Click on **SQL Server Settings** tab
+8.  Click on **SQL Server Settings** tab
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image13.png)
 
-8.  On SQL server setting spage, select below values and then click on **Review + create.**
+9.  On SQL server setting spage, select below values and then click on **Review + create.**
 
     **SQL connectivity**: Public(internet)
     
@@ -109,17 +111,17 @@ In this lab, participants work with a realistic healthcare scenario at Contoso M
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image14.png)
 
-9.  Once the validation is passed, click on **Create**.
+11.  Once the validation is passed, click on **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image15.png)
 
-10. Wait for the deployment to complete.
+11. Wait for the deployment to complete.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image16.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image17.png)
 
-11. Make sure you copy the **Public IP Address** to connect from SSMS in
+12. Make sure you copy the **Public IP Address** to connect from SSMS in
     next task
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image18.png)
@@ -200,25 +202,23 @@ VS Code.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image30.png)
 
-11. Search for +++text-embedding+++, select **text-embedding-3-small** model and
-    click Confirm.
+11. Search for +++text-embedding+++, select **text-embedding-ada-002** model and click Confirm.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image31.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image73.png)
 
 12. Select **Customize**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image32.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image74.png)
 
 13. Set Tokens per Minute Rate limit to max and click **Deploy**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image33.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image75.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image34.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image76.png)
 
-### Exercise 4: Create Data base and tables
+### Exercise 4: Create a database and tables
 
-1.  Switch back to **SSMS**. Right click on the **Databases** folder and select New database
-    to Get patient case data into SQL Server.
+1.  Switch back to **SSMS**. Right-click on the **Databases** folder and select New database to get patient case data into SQL Server.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image35.png)
 
