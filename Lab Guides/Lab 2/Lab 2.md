@@ -349,7 +349,7 @@ By completing this lab, you will be able to:
 
 1.  Switch back to the AI Service tab and click on **Import data**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image64.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image117.png)
 
 2.  Select the **Azure SQL Database** tile.
 
@@ -397,9 +397,7 @@ By completing this lab, you will be able to:
 
     - Acknowledge the service
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image69.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image70.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image118.png)
 
 6.  Keep all default values and click Next.
 
@@ -407,7 +405,7 @@ By completing this lab, you will be able to:
 
 7.  Review the details and click Create.
 
-	![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image72.png)
+	![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image119.png)
 
 8.  Click **Go to Search Explorer**.
 
