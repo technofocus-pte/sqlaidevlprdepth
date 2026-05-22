@@ -296,7 +296,7 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image113.png)
 
-15. Search for +++gpt+++ models and select the **gpt-5.2-chat** model, and
+15. Search for +++gpt-5.2+++ models and select the **gpt-5.2-chat** model, and
     Click Confirm.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image54.png)
