@@ -192,20 +192,20 @@ By the end of this lab, participants will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image28.png)
 
-11. Search for +++text-embedding+++, select **text-embedding-3-small**
+11. Search for +++text-embedding+++, select **text-embedding-ada-002**
     model and click **Confirm**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image29.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image79.png)
 
 12. Keep the default values and click **Customize**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image30.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image80.png)
 
 13. Set Tokens per Minute Rate limit to max and click **Deploy**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image31.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image81.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image32.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image82.png)
 
 ## Exercise 3: Create Storage account and Store the file
 
@@ -422,7 +422,7 @@ By the end of this lab, participants will be able to:
         LOCATION   = 'https://azsqlaoai0216.openai.azure.com/openai/deployments/embeddings/embeddings?api-version=2024-02-15-preview', 
         API_FORMAT = 'Azure OpenAI', 
         MODEL_TYPE = EMBEDDINGS, 
-        MODEL      = 'text-embedding-3-small', 
+        MODEL      = 'text-embedding-ada-002', 
         -- Reference the credential we created above (named by host URL) 
         CREDENTIAL = [Paste OpenAI Endpoint], 
         PARAMETERS = '{ "sql_rest_options": { "retry_count": 10 } }'  
@@ -488,7 +488,7 @@ By the end of this lab, participants will be able to:
     GO
     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image61.png)
+![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image61.png)
 
 11.  Run below query to verify the table data:
 
@@ -496,7 +496,7 @@ By the end of this lab, participants will be able to:
     SELECT COUNT(*) FROM dbo.ClinicalReports;
     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image62.png)
+![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image62.png)
 
 ## Exercise 6: Azure OpenAI Integration (SQL Server 2025 Pattern)
 
