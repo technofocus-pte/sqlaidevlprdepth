@@ -594,7 +594,6 @@ Allow external applications to access database.
           ]
         }
       }
-    }
     ```
 
   ![A screenshot of a computer program Description automatically
