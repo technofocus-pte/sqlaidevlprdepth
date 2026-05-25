@@ -677,13 +677,13 @@ By the end of this lab, participants will be able to:
 speed up coding.
 
 1.  In SSMS → Tools → Options → Copilot → Sign in with your GitHub
-    account
+    account.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image72.png)
 
 2.  New query window → open Copilot chat pane or type /copilot
 
-3.  Ask Copilot:
+3.  Change the chat model to **gpt-5.4 mini** and Ask Copilot:
 
     +++Generate stored procedure for semantic search on clinical reports
       using vector embeddings and Azure OpenAI+++
