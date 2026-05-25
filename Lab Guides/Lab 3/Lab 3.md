@@ -282,39 +282,23 @@ By the end of this lab, participants will be able to:
     ![A screenshot of a computer Description automatically
     generated](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image44.png)
 
-## Exercise 4: Connect SQL server 2025 via SSMS 
+## Exercise 4: Connect SQL Server 2025 via SSMS 
 
-1.  Doble click on SSMs form task bar and select **Sign in with Microsoft**
+1.  Double-click on the SSMS on the taskbar, or you can search for SSMS to open it.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image45.png)
+2. Enter the details below and click **Continue**.
 
-12. Enter below details and click **Continue**.
-
-    - Server name : **Azure VM public ip address that you copied earlier,1433 (eg :8.234.343.54,1433)**
+    - Server name: **Azure VM public IP address that you copied earlier,1433 (e.g., 8.234.343.54,1433)**
 
     - Authentication : **SQL Server Authentication**
 
 	Enter your credentials from the previous task:
-    - Username : +++sqlvmuser+++
+    - Username: +++sqlvmuser+++
     - Password: +++AZvmsql12345+++
 
     - Select **Trust Server certificate** checkbox
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image50.png)
-
-1.  In the top right, select the **user** icon and select sign in.
-
-2.  Select Work or School account and click Continue.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image46.png)
-
-3.  Sign in with your assigned cloud slice account.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image47.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image48.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%203/media/image49.png)
 
 ## Exercise 5: Enable SQL Server 2025 AI Capabilities
 
