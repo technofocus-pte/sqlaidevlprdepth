@@ -163,7 +163,7 @@ VS Code.
 
     Resource Group: **@lab.CloudResourceGroup(ResourceGroup1).Name**
 
-    Region: **@lab.CloudResourceGroup(ResourceGroup1).Location**
+    Region: **East US**
 
     Name: +++azsqlaoai@lab.labinstance.id+++
 
