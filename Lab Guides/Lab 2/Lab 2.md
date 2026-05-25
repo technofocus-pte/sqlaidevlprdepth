@@ -223,6 +223,8 @@ By completing this lab, you will be able to:
 
 ## Exercise 4: Create Azure OpenAI service and deploy chat and embedding models
 
+>[NOTE]: You can use the same text-embedding-ada-002 model that you have created in Lab 1. If you haven't deployed the text-embedding model in Lab 1, you can execute the steps below. Otherwise, you can jump directly to Step 14 to deploy the gpt-5.2 model.
+
 1.  Switch back to Azure and search for +++Azure OpenAI+++ and select it.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image39.png)
@@ -237,7 +239,7 @@ By completing this lab, you will be able to:
 
     - Resource Group: **@lab.CloudResourceGroup(ResourceGroup1).Name**
 
-    - Region: **@lab.CloudResourceGroup(ResourceGroup1).Location**
+    - Region: **East US**
 
     - Name: +++azsqlaoai@lab.labinstance.id-lab2+++
 
