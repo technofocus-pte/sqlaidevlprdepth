@@ -330,7 +330,7 @@ By completing this lab, you will be able to:
 
     - Name: +++azsearchrag@lab.labinstance.id+++
 
-    - Region: **@lab.CloudResourceGroup(ResourceGroup1).Location**
+    - Region: Select **Central US**
 
     - Pricing tier: **Standard**.
 
