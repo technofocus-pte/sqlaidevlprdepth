@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Lab 2: Developing a Knowledge-Augmented Medical Library Research Assistant with RAG and Azure SQL Database'
+  description: In this lab, you take on the role of building a Medical Research Assistant that helps users explore trusted medical research more efficiently. Instead of manually browsing through multiple documents, users can ask questions in natural language and receive clear, research-backed answers. By integrating database storage, intelligent search, and AI capabilities, you create a secure solution that ensures responses are grounded only in verified medical research data.
+  duration: 146 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure SQL Database
+---
+
 # Lab 2: Developing a Knowledge-Augmented Medical Library Research Assistant with RAG and Azure SQL Database
 
 In this lab, you take on the role of building a Medical Research

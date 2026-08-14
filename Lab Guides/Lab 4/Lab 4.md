@@ -1,3 +1,16 @@
+---
+lab:
+  title: 'Lab 4: Building a Secure Inventory System with SQL Server 2025, GitHub Copilot, and Data APIs​'
+  description: In this lab, you successfully designed and developed a modern inventory management database using SmartInventoryDB. You leveraged AI-powered assistance with GitHub Copilot to improve productivity, implemented security best practices through roles and data masking, and transformed your database into API endpoints using Azure Data API Builder. By the end of this exercise, you not only created a functional inventory system but also experienced how modern SQL development combines database design, AI assistance, governance, and API integration to build scalable, secure, and application-ready data solutions.
+  duration: 156 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - GitHub
+    - SQL Server
+---
+
 # **Lab 4: Building a Secure Inventory System with SQL Server 2025, GitHub Copilot, and Data APIs​**
 
 In today’s retail and warehouse environments, businesses need fast,
