@@ -186,7 +186,7 @@ By completing this lab, you will be able to:
 
 	+++@workspace, create a SQL Server database names COntosoMedicalResearch with default settings+++
 
-    **Note:** Write any prompt and send it, it will ask you to sign in first.
+    >[!Note] Write any prompt and send it, it will ask you to sign in first.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image28.png)
 
@@ -402,6 +402,8 @@ By completing this lab, you will be able to:
     - Kind: Azure OpenAI
 
     - Subscription: **@lab.CloudSubscription.Name**
+  
+    - Microsoft Foundry Service/project: Select the **User1-** project
 
     - Azure OpenAI Service: **azsqlaoai@lab.labinstance.id-lab2**
 

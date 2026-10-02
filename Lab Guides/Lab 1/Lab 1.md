@@ -338,7 +338,7 @@ VS Code.
 2.  Run below query to Create database scoped credential. The credential
     name must match the URL you reference in the external model and place your **Azure OpenAI Endpoint Key**
 
-    **Note: Replace the OpenAI endpoint and OpenAI Key in lines 3 and 5 of the query.**
+    >[!Note] Replace the OpenAI endpoint and OpenAI Key in lines 3 and 5 of the query.
 
     ```
     USE ContosoHospitalDB;
@@ -360,9 +360,11 @@ VS Code.
 
 4.  Switch back to Foundry portal and copy the model endpoint value:
 
+    >[!Note] If you struggle to find the correct endpoint, revert back to the old foundry view, on the left hand panel, select **Models + endpoints** under **My assets**. The Endpoint is under **Target URI**.
+
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image41.png)
 
-5.  Update the below query with the Azure OpenAI endpoint and embedding model
+6.  Update the below query with the Azure OpenAI endpoint and embedding model
     location (Foundry portal) and run to create an external model. **Note: Copy the target URL of the Azure OpenAI model (text-embedding-ada-002) from the Microsoft Foundry portal.**
 
     ```
