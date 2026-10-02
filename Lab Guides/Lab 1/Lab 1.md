@@ -105,7 +105,7 @@ In this lab, participants work with a realistic healthcare scenario at Contoso M
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image10.png)
 
-7.  On Management page,
+7.  On the **Management** page, enable these three options: '**Enable system-assigned managed identity**', '**Enable Auto-shutdown**', '**Enable periodic assessment**'. 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image11.png)
 
