@@ -285,45 +285,31 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image47.png)
 
-10. Click on Deployments under Shared resource from the left navigation
+10. Disable the **New Foundry** view by selecting the toggle on the top of the web page.
+   
+12. Click on Deployments under Shared resource from the left navigation
     menu. Select Deploy model-\> Deploy base model.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image48.png)
 
-11. Search for +++text-embedding+++, select **text-embedding-ada-002** model
+13. Search for +++text-embedding+++, select **text-embedding-ada-002** model
     and click Confirm.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image109.png)
 
-12. Keep the default values and click **Customise**.
+14. Keep the default values and click **Deploy**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image110.png)
 
-13. Set Tokens per Minute Rate limit to max and click Deploy.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image111.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image112.png)
-
-14. Click on Deployments from the left navigation menu, select **Deploy
+16. Click on Deployments from the left navigation menu, select **Deploy
     model-\> Deploy base model.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image113.png)
 
-15. Search for +++gpt-5.2+++ models and select the **gpt-5.2-chat** model, and
-    Click Confirm.
+17. Search for +++gpt-5.2+++ models and select the **gpt-5.2** model, and
+    select **Deploy**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image54.png)
-
-16. Click on **Customize** to edit deployment details.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image55.png)
-
-17. **Increase the Token per Minute Rate limit** and then click on Create resource and deploy.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image56.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image57.png)
 
 ## Exercise 5: Create Azure AI Search Service
 
@@ -474,11 +460,11 @@ By completing this lab, you will be able to:
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image81.png)
 
 7.  Click on **Models** from left navigation menu, search for
-    +++gpt-5.2-chat+++ and select it.
+    +++gpt-5.2+++ and select it.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image82.png)
 
-8.  Select **Deploy -\> Default settings**.
+8.  Select **Deploy -\> Custom settings**, **Deploy**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image83.png)
 
@@ -507,7 +493,7 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image89.png)
 
-15. Select the gpt-4.1 model as gpt-5.2 is unavailable, and then **Save
+15. Select the gpt-5.2 model, and then **Save
     knowledge base.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image90.png)
@@ -526,7 +512,7 @@ By completing this lab, you will be able to:
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image94.png)
 
-19. Enter the unique agent name and click Create.
+19. Enter the agent name +++Lab2-@lab.labinstance.id+++ and click Create.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image95.png)
 
@@ -584,9 +570,11 @@ By completing this lab, you will be able to:
 
     Ask:
 
-    +++What are recent advancements in cancer treatment?+++
+    `What are recent advancements in cancer treatment?`
 
-    +++List books and their authors related to AI in radiology diagnostics+++
+    `List books and their authors related to AI in radiology diagnostics`
+
+    >[!Alert] If there is any issues of with token limitations, please walk through the remaining steps with out submitting any prompts.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%202/media/image103.png)
 
