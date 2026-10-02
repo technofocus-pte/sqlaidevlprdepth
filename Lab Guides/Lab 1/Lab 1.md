@@ -127,7 +127,7 @@ In this lab, participants work with a realistic healthcare scenario at Contoso M
 
 	Password: +++AZvmsql12345!+++
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image14.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/sqlaidevlprdepth/refs/heads/main/Lab%20Guides/Lab%201/media/image77.png)
 
 11. Once the validation is passed, click on **Create**.
 
